@@ -1,0 +1,30 @@
+const express = require('express');
+const router = express.Router();
+const { body } = require('express-validator');
+const { submitContact, getMessages } = require('../controllers/contactController');
+const { contactLimiter } = require('../middleware/rateLimiter');
+
+// Validation rules
+const contactValidation = [
+  body('name')
+    .trim()
+    .notEmpty().withMessage('Name is required')
+    .isLength({ max: 100 }).withMessage('Name cannot exceed 100 characters'),
+  body('email')
+    .trim()
+    .notEmpty().withMessage('Email is required')
+    .isEmail().withMessage('Please provide a valid email')
+    .normalizeEmail(),
+  body('message')
+    .trim()
+    .notEmpty().withMessage('Message is required')
+    .isLength({ min: 10, max: 2000 }).withMessage('Message must be between 10 and 2000 characters'),
+];
+
+// @route POST /api/contact
+router.post('/', contactLimiter, contactValidation, submitContact);
+
+// @route GET /api/contact/messages  (personal use — add auth to protect in prod)
+router.get('/messages', getMessages);
+
+module.exports = router;
