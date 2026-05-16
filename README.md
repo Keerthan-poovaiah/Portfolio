@@ -2,7 +2,7 @@
 
 Personal portfolio built with the MERN stack to showcase backend and full-stack development skills.
 
-**Live:** [keerthan-poovaiah.github.io](https://keerthan-poovaiah.github.io) *(update after deploy)*
+**Live:** 
 
 ## Tech Stack
 
