@@ -34,7 +34,7 @@ const getPortfolioData = (req, res) => {
   const portfolioData = {
     personal: {
       name: 'Keerthan Poovaiah M M',
-      title: 'Backend Developer',
+      title: 'Software Developer',
       email: 'keerthan11poovaiah@gmail.com',
       github: 'https://github.com/keerthan-poovaiah',
       linkedin: 'https://linkedin.com/in/keerthan-poovaiah',

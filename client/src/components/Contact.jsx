@@ -48,7 +48,7 @@ export default function Contact() {
             Ready to<br /><span style={{ color: 'var(--accent)' }}>Build</span><br />Something Real
           </h2>
           <p style={{ fontSize: '0.9rem', color: 'rgba(239,239,239,0.5)', lineHeight: 1.8, maxWidth: 380, marginBottom: '2rem' }}>
-            Actively seeking SDE-1 roles — backend, full-stack, or anything that involves writing systems that scale.
+            Actively seeking SDE roles — that involves writing systems that scale.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.9rem' }}>
             {contactLinks.map(l => (
