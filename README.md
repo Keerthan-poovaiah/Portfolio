@@ -2,7 +2,7 @@
 
 Personal portfolio built with the MERN stack to showcase backend and full-stack development skills.
 
-**Live:** 
+**Live:** https://keerthan-portfolio-steel.vercel.app/
 
 ## Tech Stack
 
