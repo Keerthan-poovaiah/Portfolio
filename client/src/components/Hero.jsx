@@ -104,7 +104,7 @@ Software developer enthusiast who obsesses over clean APIs, fast queries, and co
             </div>
           </div>
           <div style={{ display: 'flex', borderTop: '1px solid var(--border)' }}>
-            {[['8.97','CGPA'],['3+','Projects'],['#1','Hackathon'],['2026','Graduating']].map(([n,l]) => (
+            {[['9.06','CGPA'],['3+','Projects'],['#1','Hackathon'],['2026','Graduating']].map(([n,l]) => (
               <div key={l} style={{ flex: 1, textAlign: 'center', padding: '0.9rem 0.5rem', borderRight: '1px solid var(--border)' }}>
                 <span style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--accent)', display: 'block', lineHeight: 1 }}>{n}</span>
                 <span style={{ fontSize: '0.6rem', color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.1em', marginTop: '0.25rem', display: 'block' }}>{l}</span>

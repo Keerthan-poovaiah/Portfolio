@@ -7,7 +7,7 @@ export const PERSONAL = {
   linkedin: 'https://linkedin.com/in/keerthan-poovaiah',
   phone: '+916364248737',
   location: 'Bengaluru, IN',
-  cgpa: 8.97,
+  cgpa: 9.06,
   graduating: 'June 2026',
   college: 'New Horizon College of Engineering',
   degree: 'B.E. in Computer Science & Engineering (Data Science)',
@@ -98,7 +98,7 @@ export const ACHIEVEMENTS = [
     year: '2024–2025 · Leadership',
   },
   {
-    icon: '🎓', title: 'Academic Excellence — 8.97 CGPA',
+    icon: '🎓', title: 'Academic Excellence — 9.06 CGPA',
     desc: 'Consistently high academic performance across DSA, DBMS, OS, Networks, and OOP — while shipping production projects.',
     year: '2022–2026 · NHCE',
   },

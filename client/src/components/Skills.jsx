@@ -28,7 +28,7 @@ export default function Skills() {
       <div className="container">
         <div className="section-label">01. Expertise</div>
         <h2 className="section-title">What I Build With</h2>
-        <p className="section-sub">Backend-first engineer comfortable across the full stack — from database design to deployment.</p>
+        <p className="section-sub">Engineer comfortable across the full stack — from database design to deployment.</p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1.2rem' }} className="skills-grid">
           {SKILLS.map((s, i) => <SkillCard key={s.name} skill={s} index={i} />)}
         </div>

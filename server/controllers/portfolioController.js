@@ -40,7 +40,7 @@ const getPortfolioData = (req, res) => {
       linkedin: 'https://linkedin.com/in/keerthan-poovaiah',
       phone: '+916364248737',
       location: 'Bengaluru, Karnataka, IN',
-      cgpa: 8.97,
+      cgpa: 9.06,
       graduating: 'June 2026',
       college: 'New Horizon College of Engineering',
       degree: 'B.E. in Computer Science & Engineering (Data Science)',
