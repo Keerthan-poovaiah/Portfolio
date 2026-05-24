@@ -22,7 +22,7 @@ connectDB();
 app.use(helmet());
 app.use(cors({
   origin: process.env.CLIENT_URL || 'http://localhost:5173',
-  methods: ['GET', 'POST'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
 }));
@@ -40,14 +40,6 @@ app.use('/api', apiLimiter);
 // ─── Routes ────────────────────────────────────────────────────────────
 app.use('/api', portfolioRoutes);
 app.use('/api/contact', contactRoutes);
-
-// ─── Serve React build in production ───────────────────────────────────
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/dist')));
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../client/dist', 'index.html'));
-  });
-}
 
 // ─── 404 Handler ───────────────────────────────────────────────────────
 app.use((req, res) => {
